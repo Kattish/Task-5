@@ -1,0 +1,48 @@
+$base-fontsize: 15px;
+$base-margin: 0;
+$base-bg: darkgray;
+$base-border: 1px solid;
+
+html, body {
+    margin: $base-margin;
+    font-size: $base-fontsize;
+    min-height: 100%;
+    height: 100%;
+    background: $base-bg;
+}
+
+p, h1, h2, h3, h4, h5, h6, div {
+    margin: $base-margin;
+    box-sizing: border-box;
+}
+ 
+.clearfix::after {
+    clear: both;
+    content: ' ';
+    display: block;
+}
+ 
+.green-text {
+    color: green;
+}
+
+.container {
+    width: 80%;
+    background: white;
+    margin: 10px auto;
+    border: $base-border darkslategray;
+    padding: 10px;
+}
+ 
+.product {
+    width: calc(20% - 2px);
+    padding: 10px;
+    margin: 1px;
+    border: $base-border darkslategray;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    min-width: 150px;
+    float: left;
+}
+
